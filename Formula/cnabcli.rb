@@ -1,8 +1,8 @@
 class Cnabcli < Formula
   desc "CLI tool for parsing CNAB files and converting them to CSV format"
-  homepage "https://github.com/Kanastra-Tech/cnab-cli"
-  url "https://github.com/Kanastra-Tech/cnab-cli/releases/download/v1.0.0/cnab-cli-1.0.0.tar.gz"
-  sha256 "0815f188904b38e36c1218117e59a1d1e101378a009710b14c55d21d6e5eb413"
+  homepage "https://github.com/Kanastra-Tech/homebrew-cnabcli"
+  url "https://github.com/Kanastra-Tech/homebrew-cnabcli/releases/download/v1.0.0/cnab-cli-1.0.0.tar.gz"
+  sha256 "c870d18deb495e54612ef6517db0631e68c08047b09cf8d657b14bb84a42bd50"
   license "MIT"
   version "1.0.0"
 
