@@ -8,17 +8,17 @@ class Cnabcli < Formula
 
   def install
     # Install the pre-built binary
-    bin.install "cnab" => "cnab"
+    bin.install "cnab-cli" => "cnab-cli"
     
     # Make sure it's executable
-    chmod 0755, bin/"cnab"
+    chmod 0755, bin/"cnab-cli"
   end
 
   test do
-    assert_match "A CLI tool for parsing CNAB files", shell_output("#{bin}/cnab --help")
-    assert_match "parse-cnab", shell_output("#{bin}/cnab --help")
+    assert_match "A CLI tool for parsing CNAB files", shell_output("#{bin}/cnab-cli --help")
+    assert_match "parse-cnab", shell_output("#{bin}/cnab-cli --help")
     
     # Test parse-cnab command help
-    assert_match "Parse CNAB file and convert to CSV", shell_output("#{bin}/cnab parse-cnab --help")
+    assert_match "Parse CNAB file and convert to CSV", shell_output("#{bin}/cnab-cli parse-cnab --help")
   end
 end
